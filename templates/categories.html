@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="hero category-hero">
+  <h2>Shop by Category</h2>
+  <p>Explore our exclusive collections, sorted just for you.</p>
+</div>
+
+<ul class="category-list">
+  {% for category in categories %}
+  <li>{{ category[0] }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
